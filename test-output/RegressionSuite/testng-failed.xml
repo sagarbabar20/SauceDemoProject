@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="HighPriorityTest(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.SauceDemo.TestClasses.TC16_VerifyAllFunctionality">
+        <methods>
+          <include name="VerifyAllproductAddToCartFunctionality"/>
+          <include name="VerifyCartPageContinueShoppingbuttonFunctionality"/>
+          <include name="setup"/>
+          <include name="VerifyDropDownFunctionality"/>
+          <include name="VerifyLoginFunctionality"/>
+          <include name="VerifyCartPageCheckoutFunctionality"/>
+          <include name="tearDown"/>
+          <include name="VerifyCustomerInfoPage_cancelFunctionality"/>
+          <include name="VerifyLogoutbuttonFunctionality"/>
+          <include name="VerifyOrderPage_BackToHomeButtonFunctionality"/>
+          <include name="VerifyBagAddToCartFunctionality"/>
+          <include name="VerifyCartPageRemoveTabFunctionality"/>
+          <include name="VerifyCustomerPage_FillInfoFunctionality"/>
+          <include name="VerifyCustomerPage_ContinueButtonFunctionality"/>
+          <include name="VerifyBillingPage_FinishButtonFunctionality"/>
+          <include name="VerifyBillingPage_CancelButtonFunctionality"/>
+        </methods>
+      </class> <!-- com.SauceDemo.TestClasses.TC16_VerifyAllFunctionality -->
+    </classes>
+  </test> <!-- HighPriorityTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\HP\eclipse-workspace\SauceDemoProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC13_VerifyDropDownFunctionality" class="method navigator-link" hash-for-method="VerifyDropDownFunctionality">VerifyDropDownFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC14_VerifyAboutButtonFunctionality" class="method navigator-link" hash-for-method="VerifyAboutButtonFunctionality">VerifyAboutButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC02_VerifyBagAddToCartFunctionality" class="method navigator-link" hash-for-method="VerifyBagAddToCartFunctionality">VerifyBagAddToCartFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC09_VerifyBillingPage_CancelButtonFunctionality" class="method navigator-link" hash-for-method="VerifyBillingPage_CancelButtonFunctionality">VerifyBillingPage_CancelButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC10_VerifyBillingPage_FinishButtonFunctionality" class="method navigator-link" hash-for-method="VerifyBillingPage_FinishButtonFunctionality">VerifyBillingPage_FinishButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC03_VerifyCartPage_CheckoutFunctionality" class="method navigator-link" hash-for-method="VerifyCartPageCheckoutFunctionality">VerifyCartPageCheckoutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC04_VerifyCartPage_ContinueShoppingbuttonFunctionality" class="method navigator-link" hash-for-method="VerifyCartPageContinueShoppingbuttonFunctionality">VerifyCartPageContinueShoppingbuttonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC05_VerifyCartPage_RemoveTabFunctionality" class="method navigator-link" hash-for-method="VerifyCartPageRemoveTabFunctionality">VerifyCartPageRemoveTabFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC07_VerifyCustomerInfoPage_cancelFunctionality" class="method navigator-link" hash-for-method="VerifyCustomerInfoPage_cancelFunctionality">VerifyCustomerInfoPage_cancelFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC08_VerifyCustomerPage_ContinueButtonFunctionality" class="method navigator-link" hash-for-method="VerifyCustomerPage_ContinueButtonFunctionality">VerifyCustomerPage_ContinueButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC06_VerifyCustomerPage_FillInfoFunctionality" class="method navigator-link" hash-for-method="VerifyCustomerPage_FillInfoFunctionality">VerifyCustomerPage_FillInfoFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC01_VerifyLoginFunctionality" class="method navigator-link" hash-for-method="VerifyLoginFunctionality">VerifyLoginFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC12_VerifyLogoutFunctionality" class="method navigator-link" hash-for-method="VerifyLogoutbuttonFunctionality">VerifyLogoutbuttonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SauceDemo.TestClasses.TC11_VerifyOrderPage_BackToHomeButtonFunctionality" class="method navigator-link" hash-for-method="VerifyOrderPage_BackToHomeButtonFunctionality">VerifyOrderPage_BackToHomeButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC13_VerifyDropDownFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDropDownFunctionality">
+                  </a> <!-- VerifyDropDownFunctionality -->
+                  <span class="method-name">VerifyDropDownFunctionality</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Price (low to high)] but found [Name (A to Z)
+Name (Z to A)
+Price (low to high)
+Price (high to low)]
+	at com.SauceDemo.TestClasses.TC13_VerifyDropDownFunctionality.VerifyDropDownFunctionality(TC13_VerifyDropDownFunctionality.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC09_VerifyBillingPage_CancelButtonFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyBillingPage_CancelButtonFunctionality">
+                  </a> <!-- VerifyBillingPage_CancelButtonFunctionality -->
+                  <span class="method-name">VerifyBillingPage_CancelButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC05_VerifyCartPage_RemoveTabFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCartPageRemoveTabFunctionality">
+                  </a> <!-- VerifyCartPageRemoveTabFunctionality -->
+                  <span class="method-name">VerifyCartPageRemoveTabFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC02_VerifyBagAddToCartFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyBagAddToCartFunctionality">
+                  </a> <!-- VerifyBagAddToCartFunctionality -->
+                  <span class="method-name">VerifyBagAddToCartFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC03_VerifyCartPage_CheckoutFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCartPageCheckoutFunctionality">
+                  </a> <!-- VerifyCartPageCheckoutFunctionality -->
+                  <span class="method-name">VerifyCartPageCheckoutFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC07_VerifyCustomerInfoPage_cancelFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCustomerInfoPage_cancelFunctionality">
+                  </a> <!-- VerifyCustomerInfoPage_cancelFunctionality -->
+                  <span class="method-name">VerifyCustomerInfoPage_cancelFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC11_VerifyOrderPage_BackToHomeButtonFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyOrderPage_BackToHomeButtonFunctionality">
+                  </a> <!-- VerifyOrderPage_BackToHomeButtonFunctionality -->
+                  <span class="method-name">VerifyOrderPage_BackToHomeButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC04_VerifyCartPage_ContinueShoppingbuttonFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCartPageContinueShoppingbuttonFunctionality">
+                  </a> <!-- VerifyCartPageContinueShoppingbuttonFunctionality -->
+                  <span class="method-name">VerifyCartPageContinueShoppingbuttonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC08_VerifyCustomerPage_ContinueButtonFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCustomerPage_ContinueButtonFunctionality">
+                  </a> <!-- VerifyCustomerPage_ContinueButtonFunctionality -->
+                  <span class="method-name">VerifyCustomerPage_ContinueButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC06_VerifyCustomerPage_FillInfoFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCustomerPage_FillInfoFunctionality">
+                  </a> <!-- VerifyCustomerPage_FillInfoFunctionality -->
+                  <span class="method-name">VerifyCustomerPage_FillInfoFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC01_VerifyLoginFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginFunctionality">
+                  </a> <!-- VerifyLoginFunctionality -->
+                  <span class="method-name">VerifyLoginFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC10_VerifyBillingPage_FinishButtonFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyBillingPage_FinishButtonFunctionality">
+                  </a> <!-- VerifyBillingPage_FinishButtonFunctionality -->
+                  <span class="method-name">VerifyBillingPage_FinishButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC14_VerifyAboutButtonFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAboutButtonFunctionality">
+                  </a> <!-- VerifyAboutButtonFunctionality -->
+                  <span class="method-name">VerifyAboutButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SauceDemo.TestClasses.TC12_VerifyLogoutFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLogoutbuttonFunctionality">
+                  </a> <!-- VerifyLogoutbuttonFunctionality -->
+                  <span class="method-name">VerifyLogoutbuttonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\HP\eclipse-workspace\SauceDemoProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC01_VerifyLoginFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC02_VerifyBagAddToCartFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC03_VerifyCartPage_CheckoutFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC04_VerifyCartPage_ContinueShoppingbuttonFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC05_VerifyCartPage_RemoveTabFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC06_VerifyCustomerPage_FillInfoFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC07_VerifyCustomerInfoPage_cancelFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC08_VerifyCustomerPage_ContinueButtonFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC09_VerifyBillingPage_CancelButtonFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC10_VerifyBillingPage_FinishButtonFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC11_VerifyOrderPage_BackToHomeButtonFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC12_VerifyLogoutFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC13_VerifyDropDownFunctionality&quot;/&gt;
+      &lt;class name=&quot;com.SauceDemo.TestClasses.TC14_VerifyAboutButtonFunctionality&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (14 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyAboutButtonFunctionality')
+data.setCell(0, 2, 'com.SauceDemo.TestClasses.TC14_VerifyAboutButtonFunctionality')
+data.setCell(0, 3, 18933);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'VerifyLoginFunctionality')
+data.setCell(1, 2, 'com.SauceDemo.TestClasses.TC01_VerifyLoginFunctionality')
+data.setCell(1, 3, 8056);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyBagAddToCartFunctionality')
+data.setCell(2, 2, 'com.SauceDemo.TestClasses.TC02_VerifyBagAddToCartFunctionality')
+data.setCell(2, 3, 3534);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyDropDownFunctionality')
+data.setCell(3, 2, 'com.SauceDemo.TestClasses.TC13_VerifyDropDownFunctionality')
+data.setCell(3, 3, 3532);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'VerifyOrderPage_BackToHomeButtonFunctionality')
+data.setCell(4, 2, 'com.SauceDemo.TestClasses.TC11_VerifyOrderPage_BackToHomeButtonFunctionality')
+data.setCell(4, 3, 2811);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'VerifyCustomerPage_FillInfoFunctionality')
+data.setCell(5, 2, 'com.SauceDemo.TestClasses.TC06_VerifyCustomerPage_FillInfoFunctionality')
+data.setCell(5, 3, 2133);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'VerifyBillingPage_CancelButtonFunctionality')
+data.setCell(6, 2, 'com.SauceDemo.TestClasses.TC09_VerifyBillingPage_CancelButtonFunctionality')
+data.setCell(6, 3, 1946);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'VerifyCartPageCheckoutFunctionality')
+data.setCell(7, 2, 'com.SauceDemo.TestClasses.TC03_VerifyCartPage_CheckoutFunctionality')
+data.setCell(7, 3, 1937);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'VerifyBillingPage_FinishButtonFunctionality')
+data.setCell(8, 2, 'com.SauceDemo.TestClasses.TC10_VerifyBillingPage_FinishButtonFunctionality')
+data.setCell(8, 3, 1795);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerifyLogoutbuttonFunctionality')
+data.setCell(9, 2, 'com.SauceDemo.TestClasses.TC12_VerifyLogoutFunctionality')
+data.setCell(9, 3, 1325);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'VerifyCustomerPage_ContinueButtonFunctionality')
+data.setCell(10, 2, 'com.SauceDemo.TestClasses.TC08_VerifyCustomerPage_ContinueButtonFunctionality')
+data.setCell(10, 3, 1310);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'VerifyCustomerInfoPage_cancelFunctionality')
+data.setCell(11, 2, 'com.SauceDemo.TestClasses.TC07_VerifyCustomerInfoPage_cancelFunctionality')
+data.setCell(11, 3, 995);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'VerifyCartPageContinueShoppingbuttonFunctionality')
+data.setCell(12, 2, 'com.SauceDemo.TestClasses.TC04_VerifyCartPage_ContinueShoppingbuttonFunctionality')
+data.setCell(12, 3, 780);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'VerifyCartPageRemoveTabFunctionality')
+data.setCell(13, 2, 'com.SauceDemo.TestClasses.TC05_VerifyCartPage_RemoveTabFunctionality')
+data.setCell(13, 3, 594);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC01_VerifyLoginFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyLoginFunctionality</span>
+                <span class="method-start">59744 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67804 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC02_VerifyBagAddToCartFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">70359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyBagAddToCartFunctionality</span>
+                <span class="method-start">95492 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99029 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC03_VerifyCartPage_CheckoutFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">100789 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCartPageCheckoutFunctionality</span>
+                <span class="method-start">130795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">132733 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC04_VerifyCartPage_ContinueShoppingbuttonFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">135238 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCartPageContinueShoppingbuttonFunctionality</span>
+                <span class="method-start">146349 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">147130 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC05_VerifyCartPage_RemoveTabFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">147964 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCartPageRemoveTabFunctionality</span>
+                <span class="method-start">156898 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">157494 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC06_VerifyCustomerPage_FillInfoFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">159139 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCustomerPage_FillInfoFunctionality</span>
+                <span class="method-start">170748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">172884 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC07_VerifyCustomerInfoPage_cancelFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">174003 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCustomerInfoPage_cancelFunctionality</span>
+                <span class="method-start">181474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">182470 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC08_VerifyCustomerPage_ContinueButtonFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">183224 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCustomerPage_ContinueButtonFunctionality</span>
+                <span class="method-start">189021 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">190333 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC09_VerifyBillingPage_CancelButtonFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">191008 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyBillingPage_CancelButtonFunctionality</span>
+                <span class="method-start">196071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">198028 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC10_VerifyBillingPage_FinishButtonFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">199169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyBillingPage_FinishButtonFunctionality</span>
+                <span class="method-start">207802 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">209598 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC11_VerifyOrderPage_BackToHomeButtonFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">210562 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyOrderPage_BackToHomeButtonFunctionality</span>
+                <span class="method-start">219402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">222214 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC12_VerifyLogoutFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">223683 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyLogoutbuttonFunctionality</span>
+                <span class="method-start">241515 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">242842 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC13_VerifyDropDownFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">246375 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyDropDownFunctionality</span>
+                <span class="method-start">257520 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">261054 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SauceDemo.TestClasses.TC14_VerifyAboutButtonFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">263522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyAboutButtonFunctionality</span>
+                <span class="method-start">273331 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">292266 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

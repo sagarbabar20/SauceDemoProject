@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+          <class name="com.SauceDemo.TestClasses.TC01_VerifyLoginFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC02_VerifyBagAddToCartFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC03_VerifyCartPage_CheckoutFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC04_VerifyCartPage_ContinueShoppingbuttonFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC05_VerifyCartPage_RemoveTabFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC06_VerifyCustomerPage_FillInfoFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC07_VerifyCustomerInfoPage_cancelFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC08_VerifyCustomerPage_ContinueButtonFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC09_VerifyBillingPage_CancelButtonFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC10_VerifyBillingPage_FinishButtonFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC11_VerifyOrderPage_BackToHomeButtonFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC12_VerifyLogoutFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC13_VerifyDropDownFunctionality"/>
+          <class name="com.SauceDemo.TestClasses.TC14_VerifyAboutButtonFunctionality"/>    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
